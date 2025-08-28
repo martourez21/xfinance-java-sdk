@@ -77,7 +77,7 @@ public class HttpService {
     }
 
     private String buildUrl(String endpoint) {
-        return config.getBaseUrl() + "/api/" + config.getApiVersion() + endpoint;
+        return config.getBaseUrl() +  endpoint;
     }
 
     private Request buildRequest(String url, String requestBody) {

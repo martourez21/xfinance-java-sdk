@@ -64,9 +64,6 @@ jobs:
       - name: Install Maven
         run: sudo apt-get update && sudo apt-get install -y maven
 
-      - name: Generate sources from Avro schema
-        run: mvn clean install -DskipTests
-
       - name: Generate Javadocs
         run: mvn javadoc:javadoc
 
